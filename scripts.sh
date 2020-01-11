@@ -1,0 +1,1 @@
+C:\protoc-3.11.2-win64\bin\protoc.exe "-IC:\Users\Shivank Awasthi\GOPROJ\go\src\\" -I. --go_out=. --gorm_out=.  .\main.proto

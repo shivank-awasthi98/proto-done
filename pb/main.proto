@@ -1,0 +1,17 @@
+syntax="proto3";
+package pb;
+
+import "github.com/infobloxopen/protoc-gen-gorm/options/gorm.proto";
+import "google/protobuf/timestamp.proto";
+
+message MyMsg {   
+    option (gorm.opts) = {
+        ormable: true
+    };
+    uint64 id=1;
+    string msg1 =2;
+    string msg2=3;
+    string msg3=4;
+    google.protobuf.Timestamp created_at = 5;
+	google.protobuf.Timestamp updated_at = 6;
+}
